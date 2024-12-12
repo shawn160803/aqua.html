@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            padding: 1rem;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .menu-section, .booking-section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form select, form textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+        }
+        form button {
+            padding: 0.5rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Name</h1>
+    </header>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#booking">Book a Table</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="menu" class="menu-section">
+            <h2>Our Menu</h2>
+            <!-- Add your menu items here -->
+            <p><strong>Pizza</strong>: $10</p>
+            <p><strong>Pasta</strong>: $12</p>
+            <p><strong>Salad</strong>: $8</p>
+        </section>
+        <section id="booking" class="booking-section">
+            <h2>Book a Table</h2>
+            <form id="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" required>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> info@restaurant.com</p>
+        </section>
+    </div>
+    <script>
+        document.getElementById('booking-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Table booked successfully!');
+        });
+    </script>
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+<script>
+    window.__ow = window.__ow || {};
+    window.__ow.organizationId = "33caf194-7496-4255-a0aa-86c846f82a96";
+    window.__ow.template_id = "f74fc865-63ec-459d-9cee-d34693a0c29c";
+    window.__ow.integration_name = "manual_settings";
+    window.__ow.product_name = "chatbot";   
+    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[OpenWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.openwidget.com/openwidget.js",t.head.appendChild(n)}};!n.__ow.asyncInit&&e.init(),n.OpenWidget=n.OpenWidget||e}(window,document,[].slice))
+  </script>
+  <noscript>You need to <a href="https://www.chatbot.com/help/chat-widget/enable-javascript-in-your-browser/" rel="noopener nofollow">enable JavaScript</a> in order to use the AI chatbot tool powered by </noscript>
+  <a href="https://www.chatbot.com/" rel="noopener nofollow" target="_blank">ChatBot</a>
+  <!-- End of ChatBot code -->
+</body>
+</html>
